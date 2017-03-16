@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Skybox
-  m_Shader: {fileID: 4800000, guid: 1b1032babd6d64921a50506aa07cf3b2, type: 3}
+  m_Shader: {fileID: 4800000, guid: e62beaebaf9ec4da8ae22bfefe5cbb79, type: 3}
   m_ShaderKeywords: _EMISSION _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -15,6 +15,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
+    - first:
+        name: _BackTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - first:
         name: _BumpMap
       second:
@@ -46,7 +52,25 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
+        name: _DownTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
         name: _EmissionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FrontTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _LeftTex
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -71,6 +95,24 @@ Material:
         m_Offset: {x: 0, y: 0}
     - first:
         name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RightTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _UpTex
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -128,14 +170,17 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
+        name: _Rotation
+      second: 0
+    - first:
         name: _SkyExponent1
-      second: 8.5
+      second: 72.3
     - first:
         name: _SkyExponent2
-      second: 3
+      second: 54.8
     - first:
         name: _SkyIntensity
-      second: 1
+      second: 0.2
     - first:
         name: _SmoothnessTextureChannel
       second: 0
@@ -147,22 +192,22 @@ Material:
       second: 1
     - first:
         name: _SunAlpha
-      second: 550
+      second: 8.71
     - first:
         name: _SunAltitude
-      second: 38
+      second: -2.22
     - first:
         name: _SunAzimuth
-      second: 20
+      second: 1.19
     - first:
         name: _SunBeta
-      second: 1
+      second: -1.04
     - first:
         name: _SunDisk
       second: 2
     - first:
         name: _SunIntensity
-      second: 2
+      second: -1.17
     - first:
         name: _SunSize
       second: 0.04
@@ -202,22 +247,25 @@ Material:
       second: {r: 0.369, g: 0.349, b: 0.341, a: 1}
     - first:
         name: _SkyColor1
-      second: {r: 0.37, g: 0.52, b: 0.73, a: 0}
+      second: {r: 0, g: 0.1378676, b: 0.33088237, a: 0}
     - first:
         name: _SkyColor2
-      second: {r: 0.89, g: 0.96, b: 1, a: 0}
+      second: {r: 1, g: 1, b: 1, a: 0}
     - first:
         name: _SkyColor3
-      second: {r: 0.89, g: 0.89, b: 0.89, a: 0}
+      second: {r: 0.11288927, g: 0.13700631, b: 0.17647058, a: 0}
     - first:
         name: _SkyTint
       second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - first:
         name: _SunColor
-      second: {r: 1, g: 0.99, b: 0.87, a: 1}
+      second: {r: 0.7529412, g: 0.6862745, b: 0.20392157, a: 1}
     - first:
         name: _SunVector
-      second: {r: 0.269, g: 0.615, b: 0.74, a: 0}
+      second: {r: 0.020752339, g: -0.038736615, b: 0.999034, a: 0}
+    - first:
+        name: _Tint
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - first:
         name: _UpVector
       second: {r: 0, g: 1, b: 0, a: 0}

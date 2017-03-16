@@ -9,7 +9,7 @@ public class ObstacleController : MonoBehaviour {
     /// any of the Update methods is called the first time.
     /// </summary>
     void Start() {
-        speed = Random.Range(2f, 4f);
+        // speed = Random.Range(2f, 4f);
     }
 
     // Update is called once per frame
@@ -20,15 +20,16 @@ public class ObstacleController : MonoBehaviour {
 
         this.transform.position -= (Vector3.forward * speed * Time.deltaTime);
 
+        if (this.transform.position.z < -10) {
+            Destroy(this.gameObject);
+        }
+
     }
-
-    /// <summary>
-    /// OnBecameInvisible is called when the renderer is no longer visible by any camera.
-    /// </summary>
-    void OnBecameInvisible() {
-
-        Destroy(this.gameObject);
-
+    
+    public void SetSpeed(float _speed) {
+        
+        speed = _speed;
+        
     }
 
 }

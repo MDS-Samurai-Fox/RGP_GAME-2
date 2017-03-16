@@ -4,8 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Good
-  - Bad
+  - AntiMatter
+  - Diamond
+  - Hydrogen
+  - Nitrogen
+  - Plutonium
   layers:
   - Default
   - TransparentFX
